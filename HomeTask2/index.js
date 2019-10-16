@@ -50,7 +50,7 @@ let form = document.createElement("form");
 
 //HTTP Request
 var request = new XMLHttpRequest();
-request.open('GET','https://devashishg.github.io/HomeTask/file.json');
+request.open('GET','https://devashishg.github.io/HomeTasks/HomeTask2/file.json');
 request.onload = ()=>{
     data = JSON.parse(request.responseText);
     loadElement(data);
@@ -98,7 +98,7 @@ var loadElement = (data)=>{
 
         let storywall = document.createElement("img"); 
         storywall.className= "rest";
-        storywall.src='./pallet.png';
+        storywall.src='./Resources/pallet.png';
         storywall.style.margin="10px";
         storywall.style.marginRight="15px";
         storywall.setAttribute('width', '80px');
