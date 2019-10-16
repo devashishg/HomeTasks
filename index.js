@@ -50,7 +50,7 @@ let form = document.createElement("form");
 
 //HTTP Request
 var request = new XMLHttpRequest();
-request.open('GET','https://devashishg.github.io/HomeTask/file.json');
+request.open('GET','https://devashishg.github.io/HomeTasks/file.json');
 request.onload = ()=>{
     data = JSON.parse(request.responseText);
     loadElement(data);
