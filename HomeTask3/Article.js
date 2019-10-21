@@ -1,32 +1,54 @@
 export {Article};
 
 class Article {
-    constructor(author, title,description,url,urlToImage,publishedAt) {
-      this.author = author;
-      this.title = title;
-      this.description = description;
-      this.url = url;
-      this.urlToImage = urlToImage;
-      this.publishedAt = publishedAt;
+    constructor(articleObj) {
+
+        //console.log(articleObj);
+      this.author = articleObj.author;
+      this.title = articleObj.title;
+      this.description = articleObj.description;
+      this.url = articleObj.url;
+      this.urlToImage = articleObj.urlToImage;
+      this.publishedAt = articleObj.publishedAt;
     }
     
-    get author(){
+    get authorValue(){
         return this.author;
     }
-    get title(){
+    get titleValue(){
         return this.title;
     }
-    get description(){
+    get descriptionValue(){
         return this.description;
     }
-    get url(){
+    get urlValue(){
         return this.url;
     }
-    get urlToImage(){
+    get urlToImageValue(){
         return this.urlToImage;
     }
-    get publishedAt(){
+    get publishedAtValue(){
         return this.publishedAt;
+    }
+
+
+    set authorValue(author){
+        this.author=author;
+    }
+    set titleValue(title){
+        this.title=title;
+    }
+    set descriptionValue(description){
+        this.description=description;
+    }
+    set urlValue(url){
+        this.url=url;
+    }
+    set urlToImageValue(urlToImage){
+        this.urlToImage=urlToImage;
+    }
+    set publishedAtValue(publishedAt){
+        this.publishedAt=publishedAt;
     }
     
   }

@@ -1,29 +1,27 @@
-import { key } from './index'
+import { key } from './index.js'
 export {Source};
 
 class Source {
-    constructor(id, name,...res) {
-      this.id = id;
-      this.name = name;
-      this.array=[];
-      this.url = `https://newsapi.org/v1/articles?source=${thid.id}&apiKey=${key}`;
+    constructor(s) {
+      this.id =s.id ,
+      this.name =s.name
+      
     }
     
-    get id(){
+    get idInput(){
       return this.id;
     }
-    get name(){
+    get nameInput(){
       return this.name;
     }
-    getSourceFeeds = () =>{
-      new Promise(resolve => resolve(fetch(this.url)))
-        .then(response=>{console.log(response.json()
-          .then(data=>{this.array = data.articles;}))})
-        .catch(error=>{console.log(error);});
+    set idInput(id){
+      this.id= id;
+    }
+    set nameInput(name){
+      this.name= name;
     }
     
   }
 
 
-l
- 
+
