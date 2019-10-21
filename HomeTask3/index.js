@@ -1,7 +1,6 @@
 import { Article } from "./Article.js";
 import { Source } from "./source.js";
 import { getPromise } from "./Services.js"
-//import {sources} from "./Services.js"
 export {key};
 
 //const key='827b0ce7adc847d499f5b4ab0d051ebc';
@@ -10,7 +9,7 @@ const key = '061c1d73cc384886a562cd04566c1b58';
 //Header Only
 let headr = document.getElementById("head1");
 headr.style.background="#11254d";
-headr.style.padding="35px";
+headr.style.padding="3%";
 headr.style.paddingBottom="45px";
 headr.style.paddingTop="20px";
 headr.style.color ="white";
@@ -165,8 +164,8 @@ let loadArticles = (articles)=>{
         storywall.src=article.urlToImage;
         storywall.style.margin="10px";
         storywall.style.marginRight="15px";
-        storywall.setAttribute('width', '80px');
-        storywall.setAttribute('height', 'auto');
+        storywall.setAttribute('width', '31%');
+        storywall.setAttribute('height', '31%');
 
         //One complete Story with image
         let oneArticle = document.createElement('div');
@@ -205,7 +204,7 @@ let createSideBar=(main)=>{
     form.style.paddingTop= '5%'; 
     
     let selectTitle =document.createElement('span');
-    selectTitle.innerHTML = '<h3>SELECT CATEGORY</h3>';
+    selectTitle.innerHTML = '<h3>SELECT AUTHOR</h3>';
     selectTitle.style.float='center';
     form.appendChild(selectTitle);
 
