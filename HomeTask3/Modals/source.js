@@ -1,4 +1,4 @@
-import { key } from './index.js'
+
 export {Source};
 
 class Source {
