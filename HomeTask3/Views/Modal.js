@@ -15,9 +15,9 @@ document.body.insertBefore(box, document.body.firstChild);
 
 //Button onclick method for Modal data using id 
 export let load = (i)=>{
-    console.log ('Hello'+'  '+i);
+    //console.log ('Hello'+'  '+i);
     let obj= articleList[i];
-    console.log(obj);
+    //console.log(obj);
     box.style.display = "block";   
     conTent.innerHTML   = `<h1>${obj.title}</h1><br/>${obj.description}`;
 }

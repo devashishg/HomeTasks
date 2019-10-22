@@ -44,7 +44,8 @@ let createSideBar=(main)=>{
 let filter = (obj)=>{
     var obj = document.getElementsByName('category');
     //console.log(obj[0]);
-    let str=obj[0].value;console.log(str);
+    let str=obj[0].value;
+    //console.log(str);
     var elements = document.querySelectorAll('.hundred');
     for (let j = 0; j < elements.length; j++) {
         if(elements[j].childNodes[1].childNodes[1].innerHTML.split('is ')[1] != str && str!='All'){
