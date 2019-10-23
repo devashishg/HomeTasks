@@ -1,7 +1,7 @@
 
-*{
-    margin-left:2%;
-    margin-right:6%;
+body{
+    margin-left:7%;
+    margin-right:7%;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,11 +12,22 @@ html,body{
 
 .head{
     background:#11254d;
-    padding:30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width:100%;
     color: aliceblue;
     font-size: 25px;
-    position: static;
+    position: stretch;
+}
+
+.foot{
+    background:#11254d;
+    padding-top:20px;
+	padding-bottom:20px;
+    width:100%;
+    color: aliceblue;
+    font-size:15px;
+    align-self: stretch;
 }
 small{
     font-size: 13px;
@@ -25,7 +36,7 @@ small{
 
 .main{
     display: flex;
-    width:105%;
+    flex-wrap: wrap;
 }
 li{
     display: flex;
@@ -34,31 +45,32 @@ li{
 }
 
 .hrblock1{
-    display: flex;
-    float:left;
-    width:100%;
+    display: inline;
     /* border: 1px solid  #11254d ; */
-
+    flex-grow: 1;
+    flex-basis: 70%;
+    min-width: 100px;
 }
 span{
     position: relative;
     margin: auto;
+    margin-right: 2%;
 }
 
+
 .hrblock2{
-    display: flex;
-    float:left;
-    /* border: 1px solid  #11254d ; */
-    width:max-content;
-    margin-left:-130px;
+    /* border: 1px solid  #11254d; */
+    flex-grow: 0;
+    margin-bottom: 10px;
+    padding: 3%;
     }
 .list{
     list-style-type:none;
 }
 
 .photo{
-    width:250px;
-    height:250px;
+    width:30%;
+    height:auto;
     position: relative;
     margin: auto;
 
@@ -89,7 +101,7 @@ select, input {
     float:left;
     margin-left:-13px;
     background:#000000;
-    color:#3f3f3f;
+    color:#ffffff;
     font-size:13px;
 }
 .sst{
@@ -98,12 +110,4 @@ select, input {
 
 img{
     padding-right:30px;
-}
-.foot{
-    background:#11254d;
-    padding:20px;
-    width:100%;
-    color: aliceblue;
-    font-size:15px;
-    align-self: stretch;
 }
