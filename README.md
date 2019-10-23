@@ -10,4 +10,12 @@
 
 **Home Task2 :**
 
-> index1.html / style1.css / file.json / index.js 
+> index.html / style.css / file.json / index.js 
+
+**Home Task3 :**
+
+> index.html / style.css / Services.js / index.js 
+
+./Modals
+
+./Views
